@@ -1,6 +1,13 @@
 import React from "react";
 import { Navapp } from "./projects/navApp/nav-app.js";
 import { Collatz } from "./projects/collatz/collatz";
+import { Placeholder } from "./projects/placeholder/placeholder";
+import styled from "styled-components";
+
+// the header color in project list.
+const ProjectHeader = styled.h3`
+  color: #ffcc00;
+`;
 
 function Body() {
   return (
@@ -34,12 +41,14 @@ function Body() {
             </p>
 
             <ul class="bio-list">
-              <Navapp />
-              <Collatz />
-              <Navapp />
-              <Navapp />
-              <Navapp />
-              <Navapp />
+              <ProjectHeader>
+                <Navapp />
+                <Collatz />
+                <Placeholder />
+                <Placeholder />
+                <Placeholder />
+                <Placeholder />
+              </ProjectHeader>
             </ul>
           </div>
         </section>

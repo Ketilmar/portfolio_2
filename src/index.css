@@ -129,6 +129,7 @@ h3 {
 .bio-list-cont > p {
   width: 100%;
   color: var(--text-color-p);
+  font-size: medium;
 }
 
 .bio-list-cont > img {
