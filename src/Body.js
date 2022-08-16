@@ -1,35 +1,17 @@
 import React from "react";
-import { Navapp } from "./projects/navApp/nav-app.js";
-import { Collatz } from "./projects/collatz/collatz";
-import { Placeholder } from "./projects/placeholder/placeholder";
-import styled from "styled-components";
-
-// the header color in project list.
-const ProjectHeader = styled.h3`
-  color: #ffcc00;
-`;
+import { Header } from "../src/components/header.js";
+import { Navapp } from "./pages/projects/navApp/nav-app.js";
+import { Collatz } from "./pages/projects/collatz/collatz";
+import { Placeholder } from "./pages/projects/placeholder/placeholder";
+import { ProjectHeader } from "./style.js";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Body() {
   return (
     <div className="Body">
-      <header id="header">
-        <div id="nav">
-          <img
-            src="img/logo.png"
-            alt="en logo jeg fant"
-            width="60"
-            height="60"
-          />
-          <ul>
-            <a href="https://link"> Home </a>
-            <a href="https://link2"> Dark Mode </a>
-            <a href="https://link3"> About </a>
-            <a href="https://link4"> Contact </a>
-          </ul>
-        </div>
-      </header>
       <main>
         <section class="content">
+          <Header />
           <div class="centered">
             <h1> My Portfolio</h1>
             <p>
