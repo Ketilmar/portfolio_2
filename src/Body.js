@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { Header } from "../src/components/header.js";
 import { Navapp } from "./pages/projects/navApp/nav-app.js";
 import { Collatz } from "./pages/projects/collatz/collatz";
@@ -31,16 +31,20 @@ function Body() {
             </p>
 
             <ul class="bio-list">
-              <Routes>
-                <Route path="/navapp" element={<NavAppPage />} />
-                <Route path="/collatz" element={<CollatzPage />} />
-              </Routes>
-              <Navapp />
-              <Collatz />
-              <Placeholder />
-              <Placeholder />
-              <Placeholder />
-              <Placeholder />
+              <ul class="bio-list">
+                <Navapp />
+                <Routes>
+                  <Route path="/navapp" element={<NavAppPage />} />
+                </Routes>
+                <Collatz />
+                <Routes>
+                  <Route path="/collatz" element={<CollatzPage />} />
+                </Routes>
+                <Placeholder />
+                <Placeholder />
+                <Placeholder />
+                <Placeholder />
+              </ul>
             </ul>
           </div>
         </section>

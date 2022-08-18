@@ -1,6 +1,7 @@
-import React from "react";
+import { React } from "react";
 
-import { NavBarBackground } from "../style.js";
+import { NavBarBackground, LinkColor } from "../style.js";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -14,10 +15,13 @@ export function Header() {
             height="60"
           />
           <ul>
-            <a href="/"> Home </a>
-            <a href="https://link2"> Dark Mode </a>
-            <a href="https://link3"> About </a>
-            <a href="https://link4"> Contact </a>
+            <LinkColor>
+              <Link to="/">Home</Link>
+
+              <a href="https://link2"> Dark Mode </a>
+              <a href="https://link3"> About </a>
+              <a href="https://link4"> Contact </a>
+            </LinkColor>
           </ul>
         </div>
       </NavBarBackground>

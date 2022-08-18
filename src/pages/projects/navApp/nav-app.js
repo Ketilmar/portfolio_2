@@ -1,16 +1,25 @@
-import React from "react";
+import { React, useRef } from "react";
 import { ProjectHeader } from "../../../style.js";
 import { BrowserRouter, Link } from "react-router-dom";
 
 export function Navapp() {
+  // this code makes the page scroll to the content
+  const navappRef = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="projects">
+    <div ref={navappRef} className="projects">
       <span>
         <img src="img/nav-app.PNG" alt="Bilde av NAV-appen" />
       </span>
       <div class="bio-list-cont">
         <ProjectHeader>
-          <Link to="/navapp">
+          <Link onClick={() => scrollToSection(navappRef)} to="/navapp">
             <h3> Nav-App</h3>
           </Link>
         </ProjectHeader>
