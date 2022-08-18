@@ -1,4 +1,6 @@
 import React from "react";
+import { ProjectHeader } from "../../../style.js";
+import { Link } from "react-router-dom";
 
 export function Collatz() {
   return (
@@ -7,7 +9,11 @@ export function Collatz() {
         <img src="img/collatz.PNG" alt="Bilde av Collatz graph" />
       </span>
       <div class="bio-list-cont">
-        <h3> Collatz</h3>
+        <ProjectHeader>
+          <Link to="/collatz">
+            <h3> Collatz</h3>
+          </Link>
+        </ProjectHeader>
         <p>
           Sommer oppgave for level 3 kodehode. Runs the collatz conjecture on
           the input number or, if selected, on every number from 1 thru input

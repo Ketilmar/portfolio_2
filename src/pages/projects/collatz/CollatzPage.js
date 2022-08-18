@@ -1,16 +1,13 @@
 import React from "react";
-import { ProjectHeader } from "../../../style.js";
+import { Image } from "../navApp/nav-app-style";
 
-export function Placeholder() {
+function CollatzPage() {
   return (
-    <div className="projects">
+    <div>
       <span>
-        <img src="img/Sketchpad.png" alt="Placeholder image" />
+        <Image src="img/collatz.PNG" alt="Bilde av Collatz graph" />
       </span>
       <div class="bio-list-cont">
-        <ProjectHeader>
-          <h3> Placeholder</h3>
-        </ProjectHeader>
         <p>
           Sommer oppgave for level 3 kodehode. Runs the collatz conjecture on
           the input number or, if selected, on every number from 1 thru input
@@ -23,3 +20,5 @@ export function Placeholder() {
     </div>
   );
 }
+
+export { CollatzPage };

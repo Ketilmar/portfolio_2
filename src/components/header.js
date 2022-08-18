@@ -14,7 +14,7 @@ export function Header() {
             height="60"
           />
           <ul>
-            <a href="https://link"> Home </a>
+            <a href="/"> Home </a>
             <a href="https://link2"> Dark Mode </a>
             <a href="https://link3"> About </a>
             <a href="https://link4"> Contact </a>

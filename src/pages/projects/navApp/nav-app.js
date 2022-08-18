@@ -1,4 +1,6 @@
 import React from "react";
+import { ProjectHeader } from "../../../style.js";
+import { BrowserRouter, Link } from "react-router-dom";
 
 export function Navapp() {
   return (
@@ -7,7 +9,11 @@ export function Navapp() {
         <img src="img/nav-app.PNG" alt="Bilde av NAV-appen" />
       </span>
       <div class="bio-list-cont">
-        <h3> NAV-app</h3>
+        <ProjectHeader>
+          <Link to="/navapp">
+            <h3> Nav-App</h3>
+          </Link>
+        </ProjectHeader>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis,
           est atque ipsam sint nobis autem aspernatur.{" "}

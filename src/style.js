@@ -7,7 +7,7 @@ const NavBarBackground = styled.div`
 
 // the headline color in project list.
 const ProjectHeader = styled.h3`
-  color: #ffcc00;
+  color: #06b2c7;
 `;
 
 export { NavBarBackground, ProjectHeader };
