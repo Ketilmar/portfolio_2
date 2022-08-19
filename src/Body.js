@@ -12,6 +12,7 @@ import {
   Route,
   Link,
   Routes,
+  Outlet,
 } from "react-router-dom";
 
 function Body() {
@@ -31,20 +32,19 @@ function Body() {
             </p>
 
             <ul class="bio-list">
-              <ul class="bio-list">
-                <Navapp />
-                <Routes>
-                  <Route path="/navapp" element={<NavAppPage />} />
-                </Routes>
-                <Collatz />
-                <Routes>
-                  <Route path="/collatz" element={<CollatzPage />} />
-                </Routes>
-                <Placeholder />
-                <Placeholder />
-                <Placeholder />
-                <Placeholder />
-              </ul>
+              <Navapp />
+              <Routes>
+                <Route path="/navapp" element={<NavAppPage />} />
+              </Routes>
+              <Collatz />
+              <Routes>
+                <Route path="/collatz" element={<CollatzPage />} />
+              </Routes>
+
+              <Placeholder />
+              <Placeholder />
+              <Placeholder />
+              <Placeholder />
             </ul>
           </div>
         </section>
