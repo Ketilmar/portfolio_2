@@ -1,4 +1,5 @@
 import React from "react";
+import { ProjectHeader } from "../../../style.js";
 
 export function Placeholder() {
   return (
@@ -7,7 +8,9 @@ export function Placeholder() {
         <img src="img/Sketchpad.png" alt="Placeholder image" />
       </span>
       <div class="bio-list-cont">
-        <h3> Placeholder </h3>
+        <ProjectHeader>
+          <h3> Placeholder</h3>
+        </ProjectHeader>
         <p>
           Sommer oppgave for level 3 kodehode. Runs the collatz conjecture on
           the input number or, if selected, on every number from 1 thru input

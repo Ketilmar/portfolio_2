@@ -1,10 +1,18 @@
-import React from "react";
+import { React } from "react";
 import { Header } from "../src/components/header.js";
 import { Navapp } from "./pages/projects/navApp/nav-app.js";
 import { Collatz } from "./pages/projects/collatz/collatz";
 import { Placeholder } from "./pages/projects/placeholder/placeholder";
-import { ProjectHeader } from "./style.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { ProjectHeader } from "./style.js";
+import NavAppPage from "./pages/projects/navApp/nav-appPage.js";
+import { CollatzPage } from "./pages/projects/collatz/CollatzPage.js";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes,
+} from "react-router-dom";
 
 function Body() {
   return (
@@ -23,14 +31,20 @@ function Body() {
             </p>
 
             <ul class="bio-list">
-              <ProjectHeader>
+              <ul class="bio-list">
                 <Navapp />
+                <Routes>
+                  <Route path="/navapp" element={<NavAppPage />} />
+                </Routes>
                 <Collatz />
+                <Routes>
+                  <Route path="/collatz" element={<CollatzPage />} />
+                </Routes>
                 <Placeholder />
                 <Placeholder />
                 <Placeholder />
                 <Placeholder />
-              </ProjectHeader>
+              </ul>
             </ul>
           </div>
         </section>
