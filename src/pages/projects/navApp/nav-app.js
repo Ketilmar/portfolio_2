@@ -1,6 +1,7 @@
 import { React, useRef } from "react";
 import { ProjectHeader } from "../../../style.js";
 import { BrowserRouter, Link } from "react-router-dom";
+import { Popup } from "reactjs-popup";
 
 export function Navapp() {
   // this code makes the page scroll to the content
@@ -10,6 +11,9 @@ export function Navapp() {
       top: elementRef.current.offsetTop,
       behavior: "smooth",
     });
+    {
+      console.log(elementRef.current.offsetTop);
+    }
   };
 
   return (

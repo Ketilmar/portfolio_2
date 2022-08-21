@@ -1,7 +1,8 @@
 import { React, useRef } from "react";
 import { ProjectHeader } from "../../../style.js";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { text } from "./textConst.js";
+import Popup from "reactjs-popup";
 
 export function Collatz() {
   // this code makes the page scroll to the content
@@ -11,6 +12,10 @@ export function Collatz() {
       top: elementRef.current.offsetTop,
       behavior: "smooth",
     });
+    {
+      // trying to log what i need to scroll where i want.
+      console.log(elementRef.current.offsetTop);
+    }
   };
 
   return (
