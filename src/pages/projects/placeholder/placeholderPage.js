@@ -1,14 +1,13 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Image } from "./nav-app-style";
+import { Image } from "../navApp/nav-app-style";
 import { ProjectPageBackground } from "../../../style";
 
 // this is a test page for testing with react-router-dom
-export default function NavAppPage() {
+function PlaceholderPage() {
   return (
     <div>
       <ProjectPageBackground>
-        <Image src="img/nav-app.PNG" alt="Bilde av NAV-appen" />
+        <Image src="img/Sketchpad.png" alt="Placeholder image" />
 
         <div class="bio-list-cont">
           <p>
@@ -30,3 +29,5 @@ export default function NavAppPage() {
     </div>
   );
 }
+
+export { PlaceholderPage };

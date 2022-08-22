@@ -15,6 +15,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import { About } from "./pages/about/aboutPage.js";
+import { PlaceholderPage } from "./pages/projects/placeholder/placeholderPage.js";
 
 function Body() {
   return (
@@ -33,19 +34,16 @@ function Body() {
               <a href="https://github.com/Ketilmar">noe annet</a>
             </p>
             <ul class="bio-list">
-              <Routes>
+              {/* <Routes>
                 <Route path="/about" element={<About />} />
-                <Route path="/collatz" element={<CollatzPage />} />
-              </Routes>
-              <Navapp />
+              </Routes> */}
               <Routes>
                 <Route path="/navapp" element={<NavAppPage />} />
-              </Routes>
-
-              <Collatz />
-              <Routes>
                 <Route path="/collatz" element={<CollatzPage />} />
+                <Route path="/placeholder" element={<PlaceholderPage />} />
               </Routes>
+              <Navapp />
+              <Collatz />
 
               <Placeholder />
               <Placeholder />

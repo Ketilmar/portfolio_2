@@ -8,11 +8,12 @@ export function Navapp() {
   const navappRef = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      // top: elementRef.current.offsetTop,
+      top: 300,
       behavior: "smooth",
     });
     {
-      console.log(elementRef.current.offsetTop);
+      console.log(elementRef);
     }
   };
 

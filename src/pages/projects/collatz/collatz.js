@@ -11,7 +11,8 @@ export function Collatz() {
   const CollatzRef = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      // top: elementRef.current.offsetTop,
+      top: 300,
       behavior: "smooth",
     });
     {
