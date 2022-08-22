@@ -2,6 +2,7 @@ import { React } from "react";
 
 import { NavBarBackground, LinkColor } from "../style.js";
 import { Link } from "react-router-dom";
+import { about } from "../pages/about/aboutPage.js";
 
 export function Header() {
   return (
@@ -19,7 +20,7 @@ export function Header() {
               <Link to="/">Home</Link>
 
               <a href="https://link2"> Dark Mode </a>
-              <a href="https://link3"> About </a>
+              <Link to="about">About</Link>
               <a href="https://link4"> Contact </a>
             </LinkColor>
           </ul>

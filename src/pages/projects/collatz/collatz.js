@@ -5,6 +5,8 @@ import { text } from "./textConst.js";
 import Popup from "reactjs-popup";
 
 export function Collatz() {
+  const { content } = text;
+  console.log(content);
   // this code makes the page scroll to the content
   const CollatzRef = useRef(null);
   const scrollToSection = (elementRef) => {
@@ -34,10 +36,10 @@ export function Collatz() {
             }}
             to="/collatz"
           >
-            <h3> {text.content.headline}</h3>
+            <h3> {content.headline}</h3>
           </Link>
         </ProjectHeader>
-        <p>{text.content.paragraph}</p>
+        <p>{content.paragraph}</p>
         <img src="img/html-5 (2).png" alt="" />
         <img src="img/java-script.png" alt="" />
         <img src="img/css-3.png" alt="" />
