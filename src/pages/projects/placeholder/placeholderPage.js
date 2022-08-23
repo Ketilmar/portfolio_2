@@ -7,7 +7,7 @@ function PlaceholderPage() {
   return (
     <div>
       <ProjectPageBackground>
-        <Image src="./Sketchpad.png" alt="Placeholder image" />
+        <Image src="./img/Sketchpad.png" alt="Placeholder image" />
 
         <div class="bio-list-cont">
           <p>
@@ -21,9 +21,9 @@ function PlaceholderPage() {
             dolor sit amet consectetur adipisicing elit. In facilis, est atque
             ipsam sint nobis autem aspernatur.
           </p>
-          <img src="./html-5 (2).png" alt="" />
-          <img src="./java-script.png" alt="" />
-          <img src="./css-3.png" alt="" />
+          <img src="./img/html-5 (2).png" alt="" />
+          <img src="./img/java-script.png" alt="" />
+          <img src="./img/css-3.png" alt="" />
         </div>
       </ProjectPageBackground>
     </div>
