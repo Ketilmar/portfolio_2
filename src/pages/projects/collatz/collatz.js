@@ -24,7 +24,7 @@ export function Collatz() {
   return (
     <div ref={CollatzRef} className="projects">
       <span>
-        <img src="./img/collatz.PNG" alt="Bilde av Collatz graph" />
+        <img src="./collatz.PNG" alt="Bilde av Collatz graph" />
       </span>
       <div class="bio-list-cont">
         <ProjectHeader>
@@ -41,9 +41,9 @@ export function Collatz() {
           </Link>
         </ProjectHeader>
         <p>{content.paragraph}</p>
-        <img src="./img/html-5 (2).png" alt="" />
-        <img src="./img/java-script.png" alt="" />
-        <img src="./img/css-3.png" alt="" />
+        <img src="./html-5 (2).png" alt="" />
+        <img src="./java-script.png" alt="" />
+        <img src="./css-3.png" alt="" />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function NavAppPage() {
   return (
     <div>
       <ProjectPageBackground>
-        <Image src="./img/nav-app.PNG" alt="Bilde av NAV-appen" />
+        <Image src="./nav-app.PNG" alt="Bilde av NAV-appen" />
 
         <div class="bio-list-cont">
           <p>
@@ -22,9 +22,9 @@ export default function NavAppPage() {
             dolor sit amet consectetur adipisicing elit. In facilis, est atque
             ipsam sint nobis autem aspernatur.
           </p>
-          <img src="./img/html-5 (2).png" alt="" />
-          <img src="./img/java-script.png" alt="" />
-          <img src="./img/css-3.png" alt="" />
+          <img src="./html-5 (2).png" alt="" />
+          <img src="./java-script.png" alt="" />
+          <img src="./css-3.png" alt="" />
         </div>
       </ProjectPageBackground>
     </div>
