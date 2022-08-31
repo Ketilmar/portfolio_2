@@ -128,11 +128,12 @@ h3 {
 
 .bio-list-cont {
   display: grid;
-  grid-template-columns: 4em 4em 4em;
+  grid-template-columns: 30% 30% 30%;
   justify-items: center;
+  justify-content: space-between;
   width: 100%;
   text-align: left;
-  margin: 0 20px 0 20px;
+  margin: 0;
 }
 
 .bio-list-cont > h3 {
@@ -152,9 +153,8 @@ h3 {
 
 .bio-list-cont > i {
   grid-row: 3 / 3;
-
   height: 10%;
-  width: 10%;
+  width: 75%;
   /* padding-bottom: 0.5em; */
   /* padding-right: 0.5em; */
   margin-right: 0.5em;
@@ -168,6 +168,7 @@ h3 {
   /* vertical-align: bottom; */
   /* margin-top: 5px; */
   width: 80%;
+  height: auto;
   /* height: 100%; */
 }
 
