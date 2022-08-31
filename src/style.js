@@ -15,7 +15,7 @@ const ProjectHeader = styled.h3`
 `;
 
 const ProjectPageBackground = styled.div`
-  background: #3c347a;
+  background: #4b609d54;
 `;
 
 export { NavBarBackground, ProjectHeader, LinkColor, ProjectPageBackground };

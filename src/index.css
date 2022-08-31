@@ -16,16 +16,19 @@ code {
 :root {
   --body-bg: #ffffff;
   --body-color: #000000;
+  --background-biolist: #ffffff;
+  --text-color: #000000;
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg: #050230;
+    --body-bg: #02334ae8;
     --body-color: #ffffff;
     --text-color: #dfc2f2;
     --text-color-p: #ece2e2;
-    --background-biolist: #050230;
+    --background-biolist: #02334a05;
+    /* --background-biolist: #1e4658e8; */
     --color-nav: #dfc2f2;
   }
 }
@@ -45,6 +48,7 @@ h1 {
 h3 {
   margin: 5px;
   text-align: center;
+  color: var(--text-color);
 }
 
 #header {
@@ -58,6 +62,7 @@ h3 {
   /* background: lightpink; */
   /* display: block; */
   /* flex-direction: column; */
+  height: 2em;
 }
 
 #nav ul {
@@ -65,6 +70,7 @@ h3 {
   /* flex-direction: column; */
   float: right;
   text-align: center;
+  margin: 0.5em 0 0.5em 0;
   /* display: block; */
   /* list-style-type: disc; */
 }
@@ -121,20 +127,37 @@ h3 {
 }
 
 .bio-list-cont {
+  display: grid;
+  grid-template-columns: 4em 4em 4em;
+  justify-items: center;
   width: 100%;
   text-align: left;
   margin: 0 20px 0 20px;
 }
 
+.bio-list-cont > h3 {
+  grid-column: 1 / 4;
+}
+
+.bio-list-cont > h3 > a {
+  text-decoration: none;
+}
+
 .bio-list-cont > p {
+  grid-column: 1 / 4;
   width: 100%;
   color: var(--text-color-p);
   font-size: medium;
 }
 
-.bio-list-cont > img {
+.bio-list-cont > i {
+  grid-row: 3 / 3;
+
   height: 10%;
   width: 10%;
+  /* padding-bottom: 0.5em; */
+  /* padding-right: 0.5em; */
+  margin-right: 0.5em;
 }
 
 .projects > span {

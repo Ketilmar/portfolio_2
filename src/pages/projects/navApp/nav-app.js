@@ -8,6 +8,7 @@ export function Navapp() {
   const navappRef = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
+      // use this property to decide where to scroll when clicked
       // top: elementRef.current.offsetTop,
       top: 250,
       behavior: "smooth",
@@ -32,9 +33,9 @@ export function Navapp() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis,
           est atque ipsam sint nobis autem aspernatur.{" "}
         </p>
-        <img src="./img/html-5 (2).png" alt="" />
-        <img src="./img/java-script.png" alt="" />
-        <img src="./img/css-3.png" alt="" />
+        <i class="fa-brands fa-html5 fa-2x"></i>
+        <i class="fa-brands fa-square-js fa-2x"></i>
+        <i class="fa-brands fa-css3-alt fa-2x"></i>
       </div>
     </div>
   );
