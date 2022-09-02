@@ -11,8 +11,8 @@ export function Header() {
           <img
             src="img/logo.png"
             alt="en logo jeg fant"
-            width="60"
-            height="60"
+            width="35"
+            height="35"
           />
           <ul>
             <LinkColor>

@@ -12,9 +12,9 @@ function CollatzPage() {
         </span>
         <div class="bio-list-cont">
           <p>{text.content.paragraph}</p>
-          <img src="./img/html-5 (2).png" alt="" />
-          <img src="./img/java-script.png" alt="" />
-          <img src="./img/css-3.png" alt="" />
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <i class="fa-brands fa-square-js fa-4x"></i>
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
         </div>
       </ProjectPageBackground>
     </div>

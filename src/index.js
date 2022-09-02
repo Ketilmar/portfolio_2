@@ -8,7 +8,7 @@ import { BrowserRouter, Outlet } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={"/portfolio_2/"}>
+    <BrowserRouter basename={"/portfolio_2"}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

@@ -35,9 +35,9 @@ export function Placeholder() {
           the input number or, if selected, on every number from 1 thru input
           number. With possibilities to show all collatz sequences as an graph.
         </p>
-        <img src="./img/html-5 (2).png" alt="" />
-        <img src="./img/java-script.png" alt="" />
-        <img src="./img/css-3.png" alt="" />
+        <i class="fa-brands fa-html5 fa-2x"></i>
+        <i class="fa-brands fa-square-js fa-2x"></i>
+        <i class="fa-brands fa-css3-alt fa-2x"></i>
       </div>
     </div>
   );
