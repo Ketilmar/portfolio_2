@@ -2,7 +2,6 @@ import { React } from "react";
 
 import { NavBarBackground, LinkColor } from "../style.js";
 import { Link } from "react-router-dom";
-import { about } from "../pages/about/aboutPage.js";
 
 export function Header() {
   return (
